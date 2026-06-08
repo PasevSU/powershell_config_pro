@@ -564,3 +564,96 @@ Write-Host "=== DONE ===" -ForegroundColor Green
    ```
 
 Ако тестът работи, кирилицата трябва да се вижда нормално в терминала на VS Code. Ако не - проблемът е в шрифта на терминала, не в PowerShell.
+Виждам проблема. winget install shellcheck.shellcheck не работи, защото това не е правилният идентификатор на пакета.
+
+✅ Правилната команда за инсталиране на ShellCheck:
+powershell
+winget install --id koalaman.shellcheck
+или
+
+powershell
+winget install --id=koalaman.shellcheck -e
+🔍 Как да търсите пакети с winget:
+Ако не сте сигурни за точното име на пакет, използвайте:
+
+powershell
+# Търсене на пакет
+winget search shellcheck
+
+# Търсене на Python
+winget search python
+
+# Търсене на Git
+winget search git
+
+# Търсене на Node.js
+winget search nodejs
+📦 Пълна инсталация на всички необходими инструменти:
+powershell
+# ShellCheck (проверка на bash/shell скриптове)
+winget install --id koalaman.shellcheck
+
+# Python 3.12
+winget install --id Python.Python.3.12
+
+# Git
+winget install --id Git.Git
+
+# Node.js (за npm)
+winget install --id OpenJS.NodeJS.LTS
+
+# VS Code (ако нямате)
+winget install --id Microsoft.VisualStudioCode
+
+# Windows Terminal (препоръчително)
+winget install --id Microsoft.WindowsTerminal
+🚨 Ако winget не намира пакет:
+Обновете winget:
+
+powershell
+# Обновяване на winget през Microsoft Store
+winget upgrade --id Microsoft.AppInstaller
+Обновете кеша:
+
+powershell
+winget source update
+Алтернативен метод - Chocolatey (ако winget не работи):
+
+powershell
+# Инсталиране на Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# Инсталиране на ShellCheck чрез Chocolatey
+choco install shellcheck
+✅ Как да проверите дали е инсталирано успешно:
+powershell
+# Проверка на версията
+shellcheck --version
+
+# Тест
+echo '#!/bin/bash\necho "Hello"' | shellcheck -
+📝 Пълна инсталационна сесия (копирай и изпълни):
+powershell
+Write-Host "=== Installing Developer Tools ===" -ForegroundColor Cyan
+
+# 1. ShellCheck
+Write-Host "Installing ShellCheck..." -ForegroundColor Yellow
+winget install --id koalaman.shellcheck --accept-package-agreements --silent
+
+# 2. Python
+Write-Host "Installing Python..." -ForegroundColor Yellow
+winget install --id Python.Python.3.12 --accept-package-agreements --silent
+
+# 3. Git
+Write-Host "Installing Git..." -ForegroundColor Yellow
+winget install --id Git.Git --accept-package-agreements --silent
+
+# 4. Node.js
+Write-Host "Installing Node.js..." -ForegroundColor Yellow
+winget install --id OpenJS.NodeJS.LTS --accept-package-agreements --silent
+
+Write-Host "=== Installation Complete! ===" -ForegroundColor Green
+Write-Host "Please restart your terminal." -ForegroundColor Yellow
+След инсталацията, рестартирайте PowerShell, за да зареди новите пътища.
