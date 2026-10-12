@@ -33,6 +33,7 @@ ollama.ollama
 pranaygp.vscode-css-peek
 redhat.vscode-yaml
 selfagency.opilot
+slevesque.vscode-zipexplorer
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-bulgarian
 stuart.unique-window-colors
@@ -40,4 +41,5 @@ timonwong.shellcheck
 vithrive.deepseek-harness-vscode
 vscode-icons-team.vscode-icons
 yandeu.five-server
+yutengjing.vscode-archive
 yzhang.markdown-all-in-one
