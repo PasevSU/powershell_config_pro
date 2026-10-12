@@ -9,6 +9,7 @@ cweijan.vscode-office
 denizhandaklr.copilot-vscode-deepseek
 docker.docker
 dotjoshjohnson.xml
+eamodio.gitlens
 ecmel.vscode-html-css
 github.remotehub
 github.vscode-github-actions
@@ -48,9 +49,14 @@ ms-vscode.remote-server
 ms-vsliveshare.vsliveshare
 ollama.ollama
 pranaygp.vscode-css-peek
+redhat.vscode-yaml
 selfagency.opilot
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-bulgarian
 stuart.unique-window-colors
+timonwong.shellcheck
 vithrive.deepseek-harness-vscode
 vizards.deepseek-v4-for-copilot
 vscode-icons-team.vscode-icons
 yandeu.five-server
+yzhang.markdown-all-in-one
