@@ -5,7 +5,7 @@ $root = $PSScriptRoot
 $winargs = '--silent --accept-source-agreements --accept-package-agreements'
 
 Write-Host '=== Базови инструменти (winget) ===' -ForegroundColor Cyan
-foreach ($pkg in @('Microsoft.PowerShell','Git.Git','GitHub.cli','Ollama.Ollama','Microsoft.VisualStudioCode','Microsoft.WindowsTerminal','ajeetdsouza.zoxide','7zip.7zip')) {
+foreach ($pkg in @('Microsoft.PowerShell','Git.Git','GitHub.cli','Ollama.Ollama','Microsoft.VisualStudioCode','Microsoft.WindowsTerminal','ajeetdsouza.zoxide','7zip.7zip','koalaman.shellcheck')) {
   Write-Host "winget install $pkg"
   winget install --id $pkg -e $winargs
 }
@@ -20,5 +20,6 @@ Write-Host '=== Езици и зависимости ===' -ForegroundColor Cyan
 & "$root\vscode\install.ps1"
 
 Write-Host '=== ГОТОВО ===' -ForegroundColor Green
+
 
 
