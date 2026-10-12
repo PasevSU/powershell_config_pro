@@ -1,11 +1,9 @@
 af4jm.vscode-m3u
 alexcvzz.vscode-sqlite
-andrewbutson.github-copilot-llm-gateway
 ashen-chathuranga.inline-cryptography-toolkit
 cweijan.dbclient-jdbc
 cweijan.vscode-mysql-client2
 cweijan.vscode-office
-denizhandaklr.copilot-vscode-deepseek
 eamodio.gitlens
 ecmel.vscode-html-css
 github.vscode-github-actions
@@ -40,7 +38,6 @@ streetsidesoftware.code-spell-checker-bulgarian
 stuart.unique-window-colors
 timonwong.shellcheck
 vithrive.deepseek-harness-vscode
-vizards.deepseek-v4-for-copilot
 vscode-icons-team.vscode-icons
 yandeu.five-server
 yzhang.markdown-all-in-one

@@ -67,7 +67,6 @@
   "inlineChat.finishOnType": true,
   "inlineChat.hideOnRequest": true,
   "chat.sessionSync.enabled": true,
-  "github.copilot.llm-gateway.serverUrl": "http://localhost:8111",
   "opilot.completionModel": "http://localhost:11434/v1",
   "opilot.experimental.nativeThinkingPart": true,
   "opilot.experimental.webSearch": true,
@@ -97,5 +96,18 @@
     "*.sql": "sql"
   },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "powershell.startAutomatically": true
+  "powershell.startAutomatically": true,
+  "gitlens.views.scm.grouped.views": {
+    "commits": true,
+    "branches": true,
+    "remotes": true,
+    "stashes": false,
+    "tags": true,
+    "worktrees": false,
+    "contributors": true,
+    "fileHistory": true,
+    "repositories": true,
+    "searchAndCompare": false,
+    "launchpad": false
+  }
 }
