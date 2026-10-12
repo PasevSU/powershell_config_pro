@@ -40,3 +40,11 @@ Get-Content vscode\extensions.txt | ForEach-Object { code --install-extension $_
 
 ## bootstrap/
 Пълен пакет за преинсталация на цялата среда (езици, инструменти, VS Code, PowerShell): стартирайте setup.ps1 от папката.
+
+## Създаване на VS Code профил PasevSU (една команда)
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/PasevSU/powershell_config_pro/main/setup-profile.ps1 | iex"
+```
+
+Създава ЧИСТ НОВ профил "PasevSU" във VS Code: настройки, всички разширения, PowerShell профил, тема, модули. Опция -IncludeTools инсталира и инструментите.
