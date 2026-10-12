@@ -1,0 +1,2 @@
+Devolutions.PowerShell:2023.3.7
+Terminal-Icons:0.11.0

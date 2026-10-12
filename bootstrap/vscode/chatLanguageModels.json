@@ -1,0 +1,19 @@
+[
+	{
+		"name": "Copilot",
+		"vendor": "agent-host-copilotcli",
+		"settings": {
+			"deepseek/deepseek-v4-pro": {
+				"thinkingLevel": "low"
+			},
+			"auto": {
+				"tier": "efficiency"
+			}
+		}
+	},
+	{
+		"name": "OpenAI",
+		"vendor": "openai",
+		"apiKey": "${input:chat.lm.secret.-7fdf90f8}"
+	}
+]

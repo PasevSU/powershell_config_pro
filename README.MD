@@ -37,3 +37,6 @@ Copy-Item vscode\settings.json, vscode\chatLanguageModels.json, vscode\mcp.json,
 # Разширения
 Get-Content vscode\extensions.txt | ForEach-Object { code --install-extension $_ --force }
 ```
+
+## bootstrap/
+Пълен пакет за преинсталация на цялата среда (езици, инструменти, VS Code, PowerShell): стартирайте setup.ps1 от папката.
